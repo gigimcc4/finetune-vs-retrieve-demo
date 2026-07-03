@@ -1,0 +1,5 @@
+# Core — the offline, free path (corpus + eval + TF-IDF retrieval).
+# Pinned to versions this repo was actually run and verified on (Python 3.10).
+pypdf==6.13.1
+scikit-learn==1.7.2
+datasets==5.0.0

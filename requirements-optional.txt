@@ -1,0 +1,15 @@
+# Optional extras — install ON TOP of requirements.txt, only if you need them.
+#   dense retrieval:  retrieval_demo.py --embed
+#   fine-tune path:   finetune.py   (needs a GPU; free Colab T4 works)
+#   LLM reader/rephrase: --llm flags (needs OPENAI_API_KEY)
+#
+# torch is intentionally NOT pinned to a build here: the right wheel depends on
+# your platform/CUDA. On Colab torch is preinstalled. On a laptop, `pip install
+# torch` picks the correct CPU/GPU build automatically. Install torch FIRST,
+# then this file.
+
+sentence-transformers==3.3.1
+transformers==4.46.3
+peft==0.13.2
+accelerate==1.1.1
+openai==1.57.0
